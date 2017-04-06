@@ -1,23 +1,30 @@
 # Exercise 1: Lists
 
 # Create a vector of everything you ate for breakfast
+breakfeast <- c("eggs","turkey", "string cheese")
 
 
 # Create a vector of everything you ate for lunch
+lunch <- c("yogurt", "salom")
 
 
 # Create a list "meals" that has contains your `breakfast` and `lunch`
+meals <- list(breakfeast = breakfeast, lunch = lunch )
 
 
 # Add a "dinner" element to your "meals" list that has what you plan to eat for dinner
+meals$dinner = c("tacos", "french fries")
+dinner <- meals$dinner
 
 
 # Use dollar notation to extract your `dinner` element from your list
 # and save it in a vector called 'dinner'
-
+meals[['lunch']]
 
 # Use double-bracket notation to extract your `lunch` element from your list
 # and save it in your list as the element at index 5 (no reason)
+meals[5] <- meals[['lunch']]
+
 
 
 # Use single-bracket notation to extract your breakfast and lunch from your list
